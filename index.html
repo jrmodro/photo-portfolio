@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design Responsivo</title>
-    <link rel="stylesheet" href="normalize.css">
+    <title>Design Responsivo - Index</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- Header -->
-    <header>
-        <h1>Design Responsivo</h1>
-        <nav>
-            <button>Open/Close menu</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
+    <header class="cabecalho"><!-- header -->
+        <h1 class="logo">Design Responsivo</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Open/Close menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                <li><a class="menu-principal__item" href="portfolio.html">Portfólio</a></li>
+                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
             </ul>
         </nav>
-    </header>
+    </header><!-- fim header -->
     <main>
         <header>
             <h2>Texto grande aqui</h2>
@@ -50,37 +50,37 @@
             <section>
                 <img src="img/depoimentos/pessoa-1.jpg" alt="foto da pessoa depoimento">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-                <p>Nome Pessa - Cargo</p>
+                <p>Nome Pessoa - Cargo</p>
             </section>
                 
         </section><!--fim seção depoimento-->
     </main>
-    <footer>
-        <div>
-            <div>
-                <a href="index.html">Design Responsivo</a>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html" class="logo logo--branco">Design Responsivo</a>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
             </div>
-            <div>
-                <h2>Social</h2>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/nelsonmodrojr" target="_blank">Linkedin</a></li>
-                    <li><a href="https://twitter.com/jr_modro" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/jr_modro/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/jrmodro" target="_blank">Facebook</a></li>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Social</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/nelsonmodrojr" target="_blank">Linkedin</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://twitter.com/jr_modro" target="_blank">Twitter</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.instagram.com/jr_modro/" target="_blank">Instagram</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.facebook.com/jrmodro" target="_blank">Facebook</a></li>
                 </ul>
             </div>
-            <div>
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre nós</a></li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Links</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="rodape__lista-links__item" href="portfolio.html">Portfólio</a></li>
+                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
-        <div>
+        <div class="rodape__linha-2">
             2018 - All rights reserved - Nelson Modro Jr
         </div>
     </footer>
