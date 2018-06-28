@@ -1,15 +1,16 @@
+/* Map */
 .mapa{
-    background: #989898;
+    background: $cor-principal;
     height: 0px;
     padding-bottom: 100%;
     position: relative;
     overflow: hidden;
     margin: 0px -15px -25px -15px;
-}
-.mapa iframe{
-    width: 100% !important;
-    height: 100% !important;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    iframe{
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 }

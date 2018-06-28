@@ -9,16 +9,18 @@
 </head>
 <body>
     <header class="cabecalho"><!-- header -->
-        <h1 class="logo">Design Responsivo</h1>
-        <nav class="menu-principal">
-            <button class="menu-principal__btn">Open/Close menu</button>
-            <ul class="menu-principal__lista">
-                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
-                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
-                <li><a class="menu-principal__item" href="portfolio.html">Portfólio</a></li>
-                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Design Responsivo</h1>
+            <nav class="menu-principal">
+                <button class="menu-principal__btn">Open/Close menu</button>
+                <ul class="menu-principal__lista">
+                    <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                    <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="menu-principal__item" href="portfolio.html">Portfólio</a></li>
+                    <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header><!-- fim header -->
     <main>
         <header class="cabecalho-home">
@@ -27,56 +29,61 @@
             <a class="cabecalho-home__role" href="#servicos">role para ver mais</a>
         </header>
         <section id="servicos" class="servicos"><!--seção serviços-->
-            <h2 class="home__titulo">O que fazemos</h2>
-            <section class="servicos__item">
-                <img src="img/icone-desenvolvimento-web.png" alt="ícone planeta terra">
-                <h3>Desenvolvimento Web</h3>
-                <p class="servicos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-            </section>
-            <section class="servicos__item">
-                <img src="img/icone-carrinho-compras.png" alt="ícone carrinho de compras">
-                <h3>E-commerce</h3>
-                <p class="servicos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-            </section>
-            <section class="servicos__item">
-                <img src="img/icone-cafe.png" alt="ícone café">
-                <h3>Café</h3>
-                <p class="servicos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-            </section>
+            <div class="container">
+                <h2 class="home__titulo">O que fazemos</h2>
+                <section class="servicos__item">
+                    <img src="img/icone-desenvolvimento-web.png" alt="ícone planeta terra">
+                    <h3>Desenvolvimento Web</h3>
+                    <p class="servicos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
+                </section>
+                <section class="servicos__item">
+                    <img src="img/icone-carrinho-compras.png" alt="ícone carrinho de compras">
+                    <h3>E-commerce</h3>
+                    <p class="servicos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
+                </section>
+                <section class="servicos__item">
+                    <img src="img/icone-cafe.png" alt="ícone café">
+                    <h3>Café</h3>
+                    <p class="servicos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
+                </section>
+            </div>
         </section><!--fim seção serviços-->
         <section class="depoimentos"><!--seção depoimento-->
-            <h2 class="home__titulo home__titulo--branco">O que falam de nós</h2>
-            <section class="depoimentos__item">
-                <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="foto da pessoa depoimento">
-                <p class="depoimentos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-                <p class="depoimentos__pessoa">Nome Pessoa - Cargo</p>
-            </section>
-                
+            <div class="container">
+                <h2 class="home__titulo home__titulo--branco">O que falam de nós</h2>
+                <section class="depoimentos__item">
+                    <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="foto da pessoa depoimento">
+                    <p class="depoimentos__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
+                    <p class="depoimentos__pessoa">Nome Pessoa - Cargo</p>
+                </section>
+            </div>
         </section><!--fim seção depoimento-->
     </main>
     <footer class="rodape">
         <div class="rodape__linha-1">
-            <div class="rodape__coluna">
-                <a href="index.html" class="logo logo--branco">Design Responsivo</a>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-            </div>
-            <div class="rodape__coluna">
-                <h2 class="rodape__titulo">Social</h2>
-                <ul class="rodape__lista-links">
-                    <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/nelsonmodrojr" target="_blank">Linkedin</a></li>
-                    <li><a class="rodape__lista-links__item" href="https://twitter.com/jr_modro" target="_blank">Twitter</a></li>
-                    <li><a class="rodape__lista-links__item" href="https://www.instagram.com/jr_modro/" target="_blank">Instagram</a></li>
-                    <li><a class="rodape__lista-links__item" href="https://www.facebook.com/jrmodro" target="_blank">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="rodape__coluna">
-                <h2 class="rodape__titulo">Links</h2>
-                <ul class="rodape__lista-links">
-                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
-                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
-                    <li><a class="rodape__lista-links__item" href="portfolio.html">Portfólio</a></li>
-                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
-                </ul>
+            <div class="container">
+                <div class="rodape__coluna">
+                    <a href="index.html" class="logo logo--branco">Design Responsivo</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
+                </div>
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Social</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/nelsonmodrojr" target="_blank">Linkedin</a></li>
+                        <li><a class="rodape__lista-links__item" href="https://twitter.com/jr_modro" target="_blank">Twitter</a></li>
+                        <li><a class="rodape__lista-links__item" href="https://www.instagram.com/jr_modro/" target="_blank">Instagram</a></li>
+                        <li><a class="rodape__lista-links__item" href="https://www.facebook.com/jrmodro" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Links</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                        <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                        <li><a class="rodape__lista-links__item" href="portfolio.html">Portfólio</a></li>
+                        <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="rodape__linha-2">

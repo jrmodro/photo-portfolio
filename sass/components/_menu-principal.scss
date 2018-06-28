@@ -1,4 +1,4 @@
-/* Menu Principal */
+/* Main menu */
 .menu-principal__btn{
     display: block;
     width: 50px;
@@ -16,9 +16,9 @@
     position: absolute;
     top: 15px;
     right: 15px;
-}
-.menu-principal__btn--fechar{
-    background-position: -48px 7px;
+    &--fechar{
+        background-position: -48px 7px;
+    }
 }
 .menu-principal__lista{
     padding: 0px;
@@ -27,11 +27,11 @@
 .menu-principal__item{
     text-decoration: none;
     font-weight: bold;
-    color: #343434;
+    color: $cor-leitura;
     margin-bottom: 10px;
     display: block;
     font-size: 18px;
-}
-.menu-principal__item--atual{
-    color: #f44242;
+    &--atual{
+        color: $cor-principal;
+    }
 }

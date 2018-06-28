@@ -1,12 +1,17 @@
+// Abstracts
 @import 'abstracts/_cores';
 
+// Base
 @import 'base/_normalize';
 @import 'base/_fonts';
 @import 'base/_meu-reset';
 
+// Layout
+@import 'layout/_container';
 @import 'layout/_cabecalho';
 @import 'layout/_rodape';
 
+// Components
 @import 'components/_alinhamento-texto';
 @import 'components/_depoimentos';
 @import 'components/_formulario';
@@ -17,6 +22,7 @@
 @import 'components/_pagina-conteudo';
 @import 'components/_servicos';
 
+// Pages
 @import 'pages/_contato';
 @import 'pages/_formulario';
 @import 'pages/_index';

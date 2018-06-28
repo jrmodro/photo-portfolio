@@ -9,22 +9,24 @@
 </head>
 <body>
     <header class="cabecalho"><!-- header -->
-        <a href="index.html" class="logo">Design Responsivo</a>
-        <nav class="menu-principal">
-            <button class="menu-principal__btn">Open/Close menu</button>
-            <ul class="menu-principal__lista">
-                <li><a class="menu-principal__item" href="index.html">Home</a></li>
-                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
-                <li><a class="menu-principal__item" href="portfolio.html">Portfólio</a></li>
-                <li><a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html" class="logo">Design Responsivo</a>
+            <nav class="menu-principal">
+                <button class="menu-principal__btn">Open/Close menu</button>
+                <ul class="menu-principal__lista">
+                    <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                    <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="menu-principal__item" href="portfolio.html">Portfólio</a></li>
+                    <li><a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header><!-- fim header -->
     <main>
         <header class="pagina-cabecalho">
             <h1 class="pagina-cabecalho__titulo">Contato</h1> 
         </header>
-        <section class="pagina-conteudo">
+        <section class="container pagina-conteudo">
             <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem</p>
             <form action="#" class="formulario">
                 <div class="formulario__grupo">
@@ -45,34 +47,36 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing <br>
                 Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore?
             </p>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4638.019649770767!2d-48.844977767814704!3d-26.31348711036656!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1527869533377" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
         </section>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4638.019649770767!2d-48.844977767814704!3d-26.31348711036656!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1527869533377" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </main>
     <footer class="rodape">
         <div class="rodape__linha-1">
-            <div class="rodape__coluna">
-                <a href="index.html" class="logo logo--branco">Design Responsivo</a>
-                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
-            </div>
-            <div class="rodape__coluna">
-                <h2 class="rodape__titulo">Social</h2>
-                <ul class="rodape__lista-links">
-                    <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/nelsonmodrojr" target="_blank">Linkedin</a></li>
-                    <li><a class="rodape__lista-links__item" href="https://twitter.com/jr_modro" target="_blank">Twitter</a></li>
-                    <li><a class="rodape__lista-links__item" href="https://www.instagram.com/jr_modro/" target="_blank">Instagram</a></li>
-                    <li><a class="rodape__lista-links__item" href="https://www.facebook.com/jrmodro" target="_blank">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="rodape__coluna">
-                <h2 class="rodape__titulo">Links</h2>
-                <ul class="rodape__lista-links">
-                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
-                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
-                    <li><a class="rodape__lista-links__item" href="portfolio.html">Portfólio</a></li>
-                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
-                </ul>
+            <div class="container">
+                <div class="rodape__coluna">
+                    <a href="index.html" class="logo logo--branco">Design Responsivo</a>
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam tenetur facere itaque dolorum alias ipsam dolorem illum esse laboriosam labore id a, nihil tempore fugit porro in dicta quod?</p>
+                </div>
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Social</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="https://www.linkedin.com/in/nelsonmodrojr" target="_blank">Linkedin</a></li>
+                        <li><a class="rodape__lista-links__item" href="https://twitter.com/jr_modro" target="_blank">Twitter</a></li>
+                        <li><a class="rodape__lista-links__item" href="https://www.instagram.com/jr_modro/" target="_blank">Instagram</a></li>
+                        <li><a class="rodape__lista-links__item" href="https://www.facebook.com/jrmodro" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Links</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                        <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                        <li><a class="rodape__lista-links__item" href="portfolio.html">Portfólio</a></li>
+                        <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="rodape__linha-2">
