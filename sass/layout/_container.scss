@@ -1,4 +1,56 @@
 .container{
-    max-width: 1200px; // se for maior que 1200 deixa em 1200, se for menor, vai ficar pela largura do dispositivo
     margin: 0px auto;  // 0 acima e abaixo e auto na direita e esquerda, fazendo ficar centralizado
+    padding-left: 15px;
+    padding-right: 15px;
+    @media(min-width: $breakpoint-sm){
+        width: 540px;
+    }
+    @media(min-width: $breakpoint-md){
+        width: 720px;
+    }
+    @media(min-width: $breakpoint-lg){
+        width: 960px;
+    }
+    @media(min-width: $breakpoint-xl){
+        width: 1140px;
+    }
 }
+
+/* Tipos de media features
+você deve desenvolver com a ideia do 'mobile first', faz todo o estilo para o mobile e depois ajusta para os outros maiores
+coloca a lógica dentro do arquivo css primeiro configurando para mobile, e depois usa os media queries para as lógicas acima de 600px
+com isso só será carregado a lógica fora dos medias queries
+
+uma segunda opção é separar as lógicas em dois arquivos diferentes e chamar o arquivo só quando for acima de 600px, mas esse é mais trabalhoso
+exemplo
+<link rel="stylesheet" href="css/style.css">                                    //style geral
+<link rel="stylesheet" media="(min-width:600px)" href="css/style-desktop.css">  //style somente para desktop
+
+/o max-width ou max-height servem para executar a lógica até atingir os 576px, quando chegar nesse tamanho para de executar a lógica
+@media (max-width: 576px){
+@media (max-height: 576px){
+@media (orientation: landscape){ largura maior que a altura
+@media (orientation: portrait){  altura maior que a largura
+
+/selecionando todos os dispositivos e somente o que tiver a largura acima de 576px começa a executar a lógica dentro do bloco
+/como esse é o padrão, pode omitir o 'all and' e vai consider como sendo esse
+@media all and (min-width: 576px){
+    width: 540px;
+}
+
+/quando o usuário pede para imprimir, será executado o css dentro desse bloco
+@media print and (min-width: 576px){
+    comandos css para impressão;
+}
+
+/para qualquer tipo de tela
+@media screen and (min-width: 576px){
+    width: 540px;
+}
+
+/quando tem algum leitor de tela sendo executado, vai usar o css dentro desse bloco
+@media speach and (min-width: 576px){
+    comandos css para leitor de tela;
+}
+
+*/ 
