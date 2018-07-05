@@ -1,44 +1,55 @@
 /* Main menu */
-.menu-principal__btn{
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-indent: -9999px;
-    background-color: #fff;
-    background-image: url('../img/menuprincipal-btn-bg.png');
-    background-repeat: no-repeat;
-    background-position: 5px 5px;
-    border-color: #c4c4c4;
-    border-style: solid;
-    border-radius: 5px;
-    cursor: pointer;
+.menu-principal{
+    &__btn{
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        background-color: #fff;
+        background-image: url('../img/menuprincipal-btn-bg.png');
+        background-repeat: no-repeat;
+        background-position: 5px 5px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        border-radius: 5px;
+        cursor: pointer;
+        @media(min-width: $breakpoint-md){
+            display: none;
+        }
 
-    // position tem 4 valores possíveis - static, relative, fixed, absolute
-    // static é o padrão de todos os elementos do HTML, sem efeito ou propriedade grandiosa, também serve para cancelar os outros positions quando quer o padrão
-    //        com o static você não consegue alterar o top, left, right, bottom dele. qualquer valor é ignorado 
-    // relative - se acomoda com relação ao primeiro pai relativo ao componente. tem top e left zero. você pode definir a posição com base no seu relative
-    // fixed - deixa o grupo (div, header, etc) preso ao navegador. você pode alterar o top, left mas ficará sempre preso e fixo
-    // absolute - igual ao fixed, mas procura o primeiro position relative e se não encontrar, vai para o topo do body 
-    // o fixed é relativo ao view port e o absolute é relativo ao primeiro elemento pai mais próximo que tem um position relative
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    &--fechar{
+        // position tem 4 valores possíveis - static, relative, fixed, absolute
+        // static é o padrão de todos os elementos do HTML, sem efeito ou propriedade grandiosa, também serve para cancelar os outros positions quando quer o padrão
+        //        com o static você não consegue alterar o top, left, right, bottom dele. qualquer valor é ignorado 
+        // relative - se acomoda com relação ao primeiro pai relativo ao componente. tem top e left zero. você pode definir a posição com base no seu relative
+        // fixed - deixa o grupo (div, header, etc) preso ao navegador. você pode alterar o top, left mas ficará sempre preso e fixo
+        // absolute - igual ao fixed, mas procura o primeiro position relative e se não encontrar, vai para o topo do body 
+        // o fixed é relativo ao view port e o absolute é relativo ao primeiro elemento pai mais próximo que tem um position relative
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    &__btn--fechar{
         background-position: -48px 7px;
     }
-}
-.menu-principal__lista{
-    padding: 0px;
-    list-style: none;
-}
-.menu-principal__item{
-    text-decoration: none;
-    font-weight: bold;
-    color: $cor-leitura;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 18px;
-    &--atual{
-        color: $cor-principal;
+    &__lista{
+        padding: 0px;
+        list-style: none;
+        @media(min-width: $breakpoint-md){
+            li{
+                display: inline-block;
+                margin: 0px 10px;
+            }
+        }
+    }
+    &__item{
+        text-decoration: none;
+        font-weight: bold;
+        color: $cor-leitura;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;
+        &--atual{
+            color: $cor-principal;
+        }
     }
 }
