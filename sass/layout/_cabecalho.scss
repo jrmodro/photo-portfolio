@@ -4,4 +4,17 @@
     padding: 15px;
     position: fixed;
     width: 100%;
+    @media(min-width: $breakpoint-md){
+        .logo{
+            float: left;
+            margin-top: 8.5px;
+        }
+        .menu-principal{
+            float: right;
+            margin-top: 12px;
+            &__lista{
+                margin-bottom: 0px;
+            }
+        }
+    }
 }

@@ -8,7 +8,7 @@
         background-color: #fff;
         background-image: url('../img/menuprincipal-btn-bg.png');
         background-repeat: no-repeat;
-        background-position: 5px 5px;
+        background-position: -48px 7px;
         border-color: #c4c4c4;
         border-style: solid;
         border-radius: 5px;
@@ -28,9 +28,6 @@
         top: 15px;
         right: 15px;
     }
-    &__btn--fechar{
-        background-position: -48px 7px;
-    }
     &__lista{
         padding: 0px;
         list-style: none;
@@ -48,8 +45,23 @@
         margin-bottom: 10px;
         display: block;
         font-size: 18px;
-        &--atual{
-            color: $cor-principal;
+    }
+    &__item--atual{
+        color: $cor-principal;
+    }
+    @media(max-width: $breakpoint-md - 1){
+        &--fechado{
+            .menu-principal__btn{
+                background-position: 5px 5px;
+            }
+            .menu-principal__lista{
+                margin: 0px;
+            }
+            .menu-principal__item{
+                margin: 0px;
+                height: 0px;
+                overflow: hidden;
+            }
         }
     }
 }
