@@ -31,6 +31,7 @@
     &__lista{
         padding: 0px;
         list-style: none;
+        transition: margin 200ms ease-out;
         @media(min-width: $breakpoint-md){
             li{
                 display: inline-block;
@@ -45,6 +46,8 @@
         margin-bottom: 10px;
         display: block;
         font-size: 18px;
+        height: 20px;
+        transition: all 200ms ease-out;
     }
     &__item--atual{
         color: $cor-principal;
