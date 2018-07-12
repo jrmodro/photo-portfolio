@@ -4,6 +4,7 @@
     padding: 15px;
     position: fixed;
     width: 100%;
+    z-index: 99; //z-index resolve o problema de empilhamento, sem ele o mapa vai sobrepor o menu
     @media(min-width: $breakpoint-md){
         .logo{
             float: left;

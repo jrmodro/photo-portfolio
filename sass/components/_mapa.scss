@@ -13,4 +13,13 @@
         top: 0px;
         left: 0px;
     }
+    @media(min-width: 450px){
+        padding-bottom: 60%;
+    }
+    @media(min-width: $breakpoint-sm){
+        padding-bottom: 40%;
+    }
+    @media(min-width: $breakpoint-lg){
+        padding-bottom: 25%;
+    }
 }
