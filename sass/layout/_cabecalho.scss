@@ -5,6 +5,7 @@
     position: fixed;
     width: 100%;
     z-index: 99; //z-index resolve o problema de empilhamento, sem ele o mapa vai sobrepor o menu
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3); //cria a sombra do menu principal 
     @media(min-width: $breakpoint-md){
         .logo{
             float: left;
