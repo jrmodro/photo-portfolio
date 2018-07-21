@@ -1,0 +1,94 @@
+// para declarar variáveis usar let ou const
+
+/*
+// select case é switch(){case}
+
+let numRodas = 5;
+switch(numRodas){
+    case 1:
+    case 2:
+    case 3:
+        console.log('Valor do pedágio: R$ 1,50');
+        break;
+    case 4:
+        console.log('Valor do pedágio: R$ 4,50');
+        break;
+    default:
+        console.log('Valor do pedágio: R$ ', numRodas * 1.75);
+}
+*/
+
+/*
+let contador1 = 12;
+let contador2 = contador1;
+while(contador1 <=10){
+    console.log('while ', contador1);
+    contador1++;
+}
+do{
+    console.log('do ', contador2);
+    contador2++;
+} while(contador2 <= 10)
+*/
+/*
+for(let i=1; i<=10; i++){
+    console.log(i);
+}
+*/
+
+/*
+// funções no java script
+function somaDoisNumeros(x,y){
+    return x+ y;
+}
+console.log(somaDoisNumeros(10,3));
+*/
+
+/*
+// arrays
+let cores = ['azul', 'vermelho', 'verde'];
+console.log(cores[0]);
+console.log('-----------------------');
+cores[5] = 'amarelo';
+console.log(cores);
+console.log('-----------------------');
+
+for(let i=0; i<=cores.length-1; i++){
+    console.log(cores[i]);
+}
+console.log('-----------------------');
+
+// para fazer loop que percorra um array inteiro, usar array.forEach()
+cores.forEach(function(valor){
+    console.log(valor);
+});
+*/
+
+//Objetos
+// carro é o objeto. Dentro de um objeto você pode criar funções - ex. andar:
+//palavra chave 'this' serve para acessar propriedades dentro de um mesmo objeto. 
+// dentro do objeto vc não pode referenciar só pelo nome, tem que usar this.elemento
+let carro = {
+    marca: 'Fiat',
+    modelo: '147',
+    cor: 'Branco',
+    ligado: false,
+    km: 0,
+    ligar: function(){
+        this.ligado = true;
+    },
+    andar: function(distancia){
+        this.ligar();
+        this.km = this.km + distancia;
+        return this.km;
+    }
+};
+console.log(carro.ligado);
+console.log(carro.andar(10));
+console.log(carro.andar(12));
+console.log(carro.andar(20));
+console.log(carro.andar(11));
+console.log(carro.andar(17));
+console.log(carro.ligado);
+console.log(carro.km);
+
